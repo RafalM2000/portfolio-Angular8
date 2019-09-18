@@ -1,11 +1,15 @@
 import { TestBed, async } from '@angular/core/testing';
 import { AppComponent } from './app.component';
+import {MenuComponent} from './menu/menu.component';
+import {MainStageComponent} from './main-stage/main-stage.component';
 
 describe('AppComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [
-        AppComponent
+        AppComponent,
+        MenuComponent,
+        MainStageComponent
       ],
     }).compileComponents();
   }));
@@ -26,6 +30,6 @@ describe('AppComponent', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('portfolio-Angular8 app is running!');
+    expect(compiled.querySelector('h1').textContent).toContain('Title');
   });
 });

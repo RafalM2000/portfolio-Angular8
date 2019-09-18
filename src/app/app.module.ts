@@ -2,10 +2,16 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
+import { MenuComponent } from './menu/menu.component';
+import { MainStageComponent } from './main-stage/main-stage.component';
+import { DataBindingComponent } from './data-binding/data-binding.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    MenuComponent,
+    MainStageComponent,
+    DataBindingComponent
   ],
   imports: [
     BrowserModule
