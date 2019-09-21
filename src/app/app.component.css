@@ -1,0 +1,30 @@
+.item1 { 
+    grid-area: menu;
+}
+.item2 { grid-area: main; }
+.item3 {
+    grid-area: footer;
+    text-align: center;
+    font-weight: 800;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+ }
+
+.grid-container {
+    color: blueviolet;
+    display: grid;
+    grid-template-columns: 180px auto auto auto;
+    grid-template-areas:    'menu main main main'
+                            'footer footer footer footer ';
+    grid-gap: 10px;
+    background-color: bisque;
+    padding: 10px;
+
+}
+
+.grid-container div {
+    border: 2px solid goldenrod;
+    padding: 10px
+}
+
+
+

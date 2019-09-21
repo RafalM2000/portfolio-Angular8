@@ -1,2 +1,31 @@
-<p> data-binding works! </p>
-<span> {{oneWayBinding}} </span>
+<h3> Examples of data binding in Angular </h3>
+
+<div class = "block">
+    <p><b>Ex.1 </b>- value showed from controller in context template</p>
+    <span>Hello: {{one}} </span>
+</div>
+
+<div class = "block"> 
+        <p> <b>Ex. 2</b> - two way data binding</p>
+        <div></div>   
+        <input type="text" placeholder="enter your real name" [(ngModel)]="twoWayBinding"/>
+        <p>I'm <b>{{twoWayBinding}}</b> not {{one}}</p>
+    </div>
+
+<div class = "block">
+    <div> <b>Ex. 3</b> - template reference to own context variable</div>
+    <label>Sex (man/women)  </label>
+    <div>
+        <input #sex type="text" (input) = "onsexView()"/>
+        <p>{{sex.value}}</p>
+    </div>
+</div>
+
+<div class = "block">
+    <p> <b>Ex. 4</b> - Property binding</p>
+    <button (click)="onButtonClicked()">Press button</button>
+    <p> Test:
+        <span [hidden] = "isHidden">Został po raz pierwszy użyty w XV w. przez nieznanego drukarza do wypełnienia tekstem próbnej książki. Pięć wieków później zaczął być używany przemyśle elektronicznym, pozostając praktycznie niezmienionym. Spopularyzował się w latach 60.</span>
+    </p>
+</div>
+

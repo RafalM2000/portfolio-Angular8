@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
+
 @Component({
   selector: 'app-data-binding',
   templateUrl: './data-binding.component.html',
@@ -7,13 +8,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DataBindingComponent implements OnInit {
 
-  oneWayBinding = "Example of one way data binding";
+  one: string = "Jon Doe ";
+  isHidden: boolean = true;
+  twoWayBinding: string = '';
+  fm = true;
 
   constructor() { }
 
   ngOnInit() {
-    var oneWayBinding = "Example of one way data binding";
-
   }
 
+  onButtonClicked() {
+    this.isHidden = !this.isHidden;
+  }
+
+  onsexView() {
+    this.fm = false;
+  }
 }
