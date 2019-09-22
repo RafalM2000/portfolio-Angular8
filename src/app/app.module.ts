@@ -5,11 +5,14 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatInputModule } from '@angular/material/input';
 import {MatCardModule} from '@angular/material/card';
+import {MatIconModule} from '@angular/material/icon';
 
 import { AppComponent } from './app.component';
 import { MenuComponent } from './menu/menu.component';
 import { MainStageComponent } from './main-stage/main-stage.component';
 import { DataBindingComponent } from './data-binding/data-binding.component';
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 @NgModule({
@@ -17,7 +20,9 @@ import { DataBindingComponent } from './data-binding/data-binding.component';
     AppComponent,
     MenuComponent,
     MainStageComponent,
-    DataBindingComponent
+    DataBindingComponent,
+    HeaderComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
@@ -25,7 +30,8 @@ import { DataBindingComponent } from './data-binding/data-binding.component';
     BrowserAnimationsModule,
     MatCheckboxModule,
     MatInputModule,
-    MatCardModule
+    MatCardModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]
