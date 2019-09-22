@@ -1,38 +1,49 @@
 <div class="container">
     <h3> Examples of data binding in Angular </h3>
+    <mat-card>
+        <mat-card-header>
+            <mat-card-title>Ex. 1 - value showed in context template from controller</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+            <span>Hello: {{one}} </span>
+        </mat-card-content>
+    </mat-card>    
 
-    <div class = "block">
-        <p><b>Ex. 1 </b>- value showed in context template from controller</p>
-        <span>Hello: {{one}} </span>
-    </div>
-    
-    <div class = "block"> 
-            <p> <b>Ex. 2</b> - two way data binding</p>
+    <mat-card>
+        <mat-card-header>
+            <mat-card-title>Ex. 2 - two way data binding</mat-card-title>
+        </mat-card-header>   
+        <mat-card-content>
             <mat-form-field class="example-full-width"> 
                 <input matInput type="text" placeholder="enter your real name" [(ngModel)]="twoWayBinding"/>
             </mat-form-field>   
             <p>I'm <b>{{twoWayBinding}}</b> not {{one}}</p>
-        </div>
+        </mat-card-content>   
+    </mat-card>   
     
-    <div class = "block">
-        <div> <b>Ex. 3</b> - template reference to own context variable</div>
-        <p>City were you live?  </p>
-        <div>
+
+    <mat-card>
+        <mat-card-header>
+            <mat-card-title>Ex. 3 - template reference to own context variable</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+            <p>City were you live?  </p>
             <mat-form-field class="example-full-width">
                 <input matInput placeholder="City" #cityName type="text" (input) = "cityDisplay()"/>
             </mat-form-field>   
             <p>{{cityName.value}}</p>
-        </div>
-    </div>
+        </mat-card-content>
+    </mat-card>
     
-    <div class = "block">
-        <p> <b>Ex. 4</b> - Property binding</p>
-        <mat-checkbox class="example-margin" (click)="onButtonClicked()">Checked</mat-checkbox>
-        <p>
-            <span [hidden] = "isHidden">Został po raz pierwszy użyty w XV w. przez nieznanego drukarza do wypełnienia tekstem próbnej książki. Pięć wieków później zaczął być używany przemyśle elektronicznym, pozostając praktycznie niezmienionym. Spopularyzował się w latach 60.</span>
-        </p>
-    </div>
-</div>
-
+    <mat-card>
+        <mat-card-header>
+            <mat-card-title>Ex. 4 - Property binding</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+            <mat-checkbox class="example-margin" (click)="onButtonClicked()">Checked</mat-checkbox>
+            <p>
+                <span [hidden] = "isHidden">Został po raz pierwszy użyty w XV w. przez nieznanego drukarza do wypełnienia tekstem próbnej książki. Pięć wieków później zaczął być używany przemyśle elektronicznym, pozostając praktycznie niezmienionym. Spopularyzował się w latach 60.</span>
+            </p>
+        </mat-card-content>
 
 
