@@ -13,6 +13,7 @@ import { MainStageComponent } from './main-stage/main-stage.component';
 import { DataBindingComponent } from './data-binding/data-binding.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
+import { DirectivesComponent } from './directives/directives.component';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { FooterComponent } from './footer/footer.component';
     MainStageComponent,
     DataBindingComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    DirectivesComponent
   ],
   imports: [
     BrowserModule,

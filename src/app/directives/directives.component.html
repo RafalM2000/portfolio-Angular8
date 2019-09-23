@@ -1,0 +1,54 @@
+<div class="container">
+
+    <h3> Examples of data binding in Angular </h3>
+    <mat-card>
+        <mat-card-header>
+            <mat-card-title>Ex. 1 - *ngIf structural directive</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+            <mat-checkbox class="example-margin" (click)="onButtonClicked()" checked = 'true'>Checked</mat-checkbox>
+            <div *ngIf="isVisible; else alternative">Content visible when condition is true.</div>
+            <ng-template #alternative><div>Content visible when condition is false.</div></ng-template>
+        </mat-card-content>
+    </mat-card>    
+
+    <mat-card>
+        <mat-card-header>
+            <mat-card-title>Ex. 2 - *ngFor structural directive</mat-card-title>
+        </mat-card-header>   
+        <mat-card-content>
+            <p>array =  ['Mike', 'Jon', 'Sara', 'Eva']</p>
+            <p *ngFor = "let user of usersList; let i = index">{{i+1}}. {{user}}</p>
+           
+        </mat-card-content>   
+    </mat-card>   
+    
+
+    <mat-card>
+        <mat-card-header>
+            <mat-card-title>Ex. 2 - *ngSwitch structural directive</mat-card-title>
+        </mat-card-header>   
+        <mat-card-content>
+            <p></p>
+            
+        </mat-card-content>   
+    </mat-card> 
+
+    <mat-card>
+        <mat-card-header>
+            <mat-card-title>Ex. 3 - *ngClass structural directive</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+
+        </mat-card-content>
+    </mat-card>
+    
+    <mat-card>
+        <mat-card-header>
+            <mat-card-title>Ex. 4 - *ngStyle structural directive</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+
+        </mat-card-content>
+    </mat-card>
+</div>
