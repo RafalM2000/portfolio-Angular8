@@ -10,6 +10,7 @@ export class DirectivesComponent implements OnInit {
 usersList = ['Mike', 'Jon', 'Sara', 'Eva'];
 isVisible = true;
 switchExpression = 'No2';
+colorConverter = false;
 
   constructor() { }
 
@@ -18,6 +19,10 @@ switchExpression = 'No2';
 
   onButtonClicked() {
     this.isVisible = !this.isVisible;
+  }
+
+  onColorConverter() {
+    this.colorConverter = !this.colorConverter;
   }
 
 
