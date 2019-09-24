@@ -27,9 +27,16 @@
     <mat-card>
         <mat-card-header>
             <mat-card-title>Ex. 2 - *ngSwitch structural directive</mat-card-title>
-        </mat-card-header>   
+        </mat-card-header> 
         <mat-card-content>
-            <p></p>
+            <div [ngSwitch] = "switchExpression">
+                <p *ngSwitchCase = "'No1'">Switch 1</p>  
+                <p *ngSwitchCase = "'No2'">Switch 2</p>  
+                <p *ngSwitchCase = "'No3'">Switch 3</p>  
+                <p *ngSwitchCase = "'No4'">Switch 4</p>  
+                <p *ngSwitchCase = "'No5'">Switch 5</p> 
+                <p *ngSwitchDefault>Switch 6</p> 
+            </div>
             
         </mat-card-content>   
     </mat-card> 

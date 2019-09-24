@@ -9,6 +9,7 @@ export class DirectivesComponent implements OnInit {
 
 usersList = ['Mike', 'Jon', 'Sara', 'Eva'];
 isVisible = true;
+switchExpression = 'No2';
 
   constructor() { }
 
