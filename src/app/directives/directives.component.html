@@ -44,9 +44,13 @@
     <mat-card>
         <mat-card-header>
             <mat-card-title>Ex. 3 - ngClass structural directive</mat-card-title>
-        </mat-card-header>
-            <p></p>
-        <mat-card-content>
+        </mat-card-header>    
+        <button class ='buttonStyle' mat-raised-button color="accent" (click) = "onCurrencyButton(-1)">Minus</button>
+        <button class ='buttonStyle' mat-raised-button color="accent" (click) = "onCurrencyButton(1)">Plus</button>
+        <ul *ngFor = "let item of currencies;  let i = index">
+            <li [ngClass] = "{'currencyClass': i === currencyItem}">{{item}}</li>
+        </ul>
+        <mat-card-content class='clearFloat'>
 
         </mat-card-content>
     </mat-card>
@@ -58,7 +62,7 @@
         <mat-card-content>
             <button class ='buttonStyle' mat-raised-button color="accent" (click) = "onColorConverter()">Convert color</button>
             <div>
-                <span [ngStyle] = "{'background-color': colorConverter === true ? 'green' : 'red', 'font-size': '20px', 'font-width': '800', 'color': 'white', 'padding': '5px'}">
+                <span [ngStyle] = "{'background-color': colorConverter === true ? 'green' : 'red', 'font-size': '20px', 'font-width': '800', 'color': 'white', 'padding': '5px', 'border-radius': '5px'}">
                 Color convertor is using ngStyle</span>
             </div> 
         </mat-card-content>
