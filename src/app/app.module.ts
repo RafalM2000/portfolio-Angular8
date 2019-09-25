@@ -15,6 +15,7 @@ import { DataBindingComponent } from './data-binding/data-binding.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { DirectivesComponent } from './directives/directives.component';
+import { WarningAlertDirective } from './directives/worningAlert/warning-alert.directive';
 
 
 @NgModule({
@@ -25,7 +26,8 @@ import { DirectivesComponent } from './directives/directives.component';
     DataBindingComponent,
     HeaderComponent,
     FooterComponent,
-    DirectivesComponent
+    DirectivesComponent,
+    WarningAlertDirective
   ],
   imports: [
     BrowserModule,

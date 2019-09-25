@@ -60,11 +60,22 @@
             <mat-card-title>Ex. 4 - ngStyle structural directive</mat-card-title>
         </mat-card-header>
         <mat-card-content>
-            <button class ='buttonStyle' mat-raised-button color="accent" (click) = "onColorConverter()">Convert color</button>
+            <button class ='buttonStyle' mat-raised-button color="accent" (click) = "onColorConverter()">Press - convert color</button>
             <div>
                 <span [ngStyle] = "{'background-color': colorConverter === true ? 'green' : 'red', 'font-size': '20px', 'font-width': '800', 'color': 'white', 'padding': '5px', 'border-radius': '5px'}">
                 Color convertor is using ngStyle</span>
             </div> 
         </mat-card-content>
     </mat-card>
+
+    <mat-card>
+            <mat-card-header>
+                <mat-card-title>Ex. 5 - custom directive</mat-card-title>
+            </mat-card-header>
+            <mat-card-content>
+                <div>
+                    <span appWarningAlert>This is a custom directive</span>
+                </div> 
+            </mat-card-content>
+        </mat-card>
 </div>
