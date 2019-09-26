@@ -7,15 +7,15 @@ import { MatInputModule } from '@angular/material/input';
 import { MatCardModule } from '@angular/material/card';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
+import { AppRoutingModule, routingComponents } from './app-routing.module';
 
 import { AppComponent } from './app.component';
 import { MenuComponent } from './menu/menu.component';
 import { MainStageComponent } from './main-stage/main-stage.component';
-import { DataBindingComponent } from './data-binding/data-binding.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
-import { DirectivesComponent } from './directives/directives.component';
 import { WarningAlertDirective } from './directives/worningAlert/warning-alert.directive';
+
 
 
 @NgModule({
@@ -23,11 +23,10 @@ import { WarningAlertDirective } from './directives/worningAlert/warning-alert.d
     AppComponent,
     MenuComponent,
     MainStageComponent,
-    DataBindingComponent,
     HeaderComponent,
     FooterComponent,
-    DirectivesComponent,
-    WarningAlertDirective
+    WarningAlertDirective,
+    routingComponents
   ],
   imports: [
     BrowserModule,
@@ -37,7 +36,8 @@ import { WarningAlertDirective } from './directives/worningAlert/warning-alert.d
     MatInputModule,
     MatCardModule,
     MatIconModule,
-    MatButtonModule
+    MatButtonModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
