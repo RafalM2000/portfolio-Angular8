@@ -2,14 +2,23 @@ import { TestBed, async } from '@angular/core/testing';
 import { AppComponent } from './app.component';
 import {MenuComponent} from './menu/menu.component';
 import {MainStageComponent} from './main-stage/main-stage.component';
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
+
+import { RouterTestingModule } from '@angular/router/testing';
 
 describe('AppComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
+      imports: [
+        RouterTestingModule
+      ],
       declarations: [
         AppComponent,
         MenuComponent,
-        MainStageComponent
+        MainStageComponent,
+        HeaderComponent,
+        FooterComponent
       ],
     }).compileComponents();
   }));
@@ -26,10 +35,4 @@ describe('AppComponent', () => {
     expect(app.title).toEqual('portfolio-Angular8');
   });
 
-  it('should render title', () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    fixture.detectChanges();
-    const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('h1').textContent).toContain('Title');
-  });
 });
