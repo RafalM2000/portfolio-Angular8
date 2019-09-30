@@ -1,0 +1,49 @@
+<mat-card>
+    <mat-card-header>
+        <mat-card-title>{{title}}</mat-card-title>
+    </mat-card-header>
+        <mat-card-content>
+            <p>{{title | lowercase}} ----> lowercase</p>
+            <p>{{title | uppercase}} ----> uppercase</p>
+            <p>{{title | titlecase}} ----> titlecase</p>
+            <p>{{title | slice:3:12}} ----> slice:3:12</p>
+        </mat-card-content>
+</mat-card>
+
+<mat-card>
+    <mat-card-header>
+        <mat-card-title>Pipes for the number: {{numberOne}}</mat-card-title>
+    </mat-card-header>
+        <mat-card-content>
+            <p>{{numberOne | number: '2.2-4'}} ----> number pipe 2.2-4</p>
+            <p>{{numberOne | number: '2.1-1'}} ----> number pipe 2.1-1</p>
+            <p>{{numberOne | number: '4.3-6'}} ----> number pipe 4.3-6</p>
+        </mat-card-content>
+</mat-card>
+s
+<mat-card>
+    <mat-card-header>
+        <mat-card-title>Curreny and % pipes for the number {{numeberTwo}</mat-card-title>
+    </mat-card-header>
+        <mat-card-content>
+            <p>{{numberTwo | percent}} ----> percent pipe</p>
+            <p>{{numberOne | currency: 'GBP'}} ----> currency pipe</p>
+        </mat-card-content>
+</mat-card>
+
+<mat-card>
+    <mat-card-header>
+        <mat-card-title>Pipes for the date: {{date}}</mat-card-title>
+    </mat-card-header>
+        <mat-card-content>
+            <p>{{date | date: ' short'}} ----> short</p>
+            <p>{{date | date: 'shortTime'}} ----> shortTime</p>
+            <p>{{date | date: 'longTime'}} ----> longTime</p> 
+            <p>{{date | date: 'shortDate'}} ----> shortDate</p>
+            <p>{{date | date: 'longDate'}} ----> longDate</p> 
+        </mat-card-content>
+</mat-card>
+
+
+
+

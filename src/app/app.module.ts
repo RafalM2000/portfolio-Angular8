@@ -16,8 +16,6 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { WarningAlertDirective } from './directives/worningAlert/warning-alert.directive';
 
-
-
 @NgModule({
   declarations: [
     AppComponent,
