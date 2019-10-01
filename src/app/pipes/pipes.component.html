@@ -20,7 +20,7 @@
             <p>{{numberOne | number: '4.3-6'}} ----> number pipe 4.3-6</p>
         </mat-card-content>
 </mat-card>
-s
+
 <mat-card>
     <mat-card-header>
         <mat-card-title>Curreny and % pipes for the number {{numeberTwo}</mat-card-title>
@@ -43,6 +43,17 @@ s
             <p>{{date | date: 'longDate'}} ----> longDate</p> 
         </mat-card-content>
 </mat-card>
+
+<mat-card>
+        <mat-card-header>
+            <mat-card-title>Custom pipes</mat-card-title>
+        </mat-card-header>
+            <mat-card-content>
+                <p>This is an original string</p>
+                <p>{{"This is an original string after pipe - singlequote" | reverse:"singlequote"}}</p>
+                <p>{{"This is an original string after pipe - doublequote" | reverse:"doublequote"}}</p>
+            </mat-card-content>
+    </mat-card>
 
 
 

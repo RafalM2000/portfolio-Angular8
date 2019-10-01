@@ -15,6 +15,7 @@ import { MainStageComponent } from './main-stage/main-stage.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { WarningAlertDirective } from './directives/worningAlert/warning-alert.directive';
+import { ReversePipe } from './reverse.pipe';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { WarningAlertDirective } from './directives/worningAlert/warning-alert.d
     HeaderComponent,
     FooterComponent,
     WarningAlertDirective,
-    routingComponents
+    routingComponents,
+    ReversePipe
   ],
   imports: [
     BrowserModule,
