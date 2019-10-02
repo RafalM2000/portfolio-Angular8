@@ -1,6 +1,8 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { MatCardModule } from '@angular/material/card';
 
 import { PipesComponent } from './pipes.component';
+import { QuotationPipe } from '../quotation.pipe';
 
 describe('PipesComponent', () => {
   let component: PipesComponent;
@@ -8,7 +10,8 @@ describe('PipesComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ PipesComponent ]
+      declarations: [ PipesComponent, QuotationPipe ],
+      imports: [MatCardModule]
     })
     .compileComponents();
   }));

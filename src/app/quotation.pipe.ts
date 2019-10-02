@@ -1,9 +1,9 @@
 import { Pipe, PipeTransform } from '@angular/core';
 
 @Pipe({
-  name: 'reverse'
+  name: 'quotation'
 })
-export class ReversePipe implements PipeTransform {
+export class QuotationPipe implements PipeTransform {
 
   transform(value: any, ...args: any[]): any {
     let newstring = value;
