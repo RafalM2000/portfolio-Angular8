@@ -1,0 +1,54 @@
+<mat-card>
+    <mat-card-header>
+        <mat-card-title>Ex. 2 - template driven forms</mat-card-title>
+    </mat-card-header>   
+    <mat-card-content>
+        <form #form="ngForm" (ngSubmit)="onSubmit(form.value)">
+            <div>
+                <mat-form-field class="example-full-width"> 
+                    <input 
+                    matInput 
+                    ngModel 
+                    #firstName="ngModel"
+                    name="firstName" 
+                    type="text" 
+                    placeholder="enter first name (min 5, max 10 characters)"
+                    required
+                    minlength="5"
+                    maxlength=10/>
+                </mat-form-field>  
+            </div>
+            <div>
+                <mat-form-field class="example-full-width"> 
+                    <input 
+                    matInput 
+                    ngModel 
+                    #secondName="ngModel"
+                    name="secondName" 
+                    type="text" 
+                    placeholder="enter second name (min 3, max 10  characters)"
+                    required
+                    minlength="3"
+                    maxlength=10/>
+                </mat-form-field>  
+            </div>
+             
+
+        <div *ngIf="firstName.touched && !firstName.valid" class = 'warning-alert'>
+                <p>First name is invalid</p>
+            </div>
+            <div *ngIf="secondName.touched && !secondName.valid" class = 'warning-alert'>
+                <p>Second name is invalid</p>
+            </div> 
+                    
+        <button type="submit"
+        [disabled]= "form.invalid"
+        class ='buttonStyle' 
+        mat-raised-button color="accent" 
+       >Send</button>
+        </form>
+
+
+    
+    </mat-card-content>   
+</mat-card>  

@@ -17,6 +17,7 @@ import { FooterComponent } from './footer/footer.component';
 import { WarningAlertDirective } from './directives/worningAlert/warning-alert.directive';
 import { QuotationPipe } from './quotation.pipe';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,7 +27,7 @@ import { QuotationPipe } from './quotation.pipe';
     FooterComponent,
     WarningAlertDirective,
     routingComponents,
-    QuotationPipe
+    QuotationPipe,
   ],
   imports: [
     BrowserModule,
