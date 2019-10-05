@@ -13,7 +13,7 @@ describe('TemplateDrivFormComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ 
+      declarations: [
         TemplateDrivFormComponent ],
       imports: [
         BrowserAnimationsModule,

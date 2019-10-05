@@ -1,14 +1,19 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { DataBindingComponent } from './data-binding/data-binding.component';     // Add your component here
-import { DirectivesComponent } from './directives/directives.component';  // Add your component here
+import { DataBindingComponent } from './data-binding/data-binding.component';
+import { DirectivesComponent } from './directives/directives.component';
 import { RectiveDrivFormComponent } from './forms/rective-driv-form/rective-driv-form.component';
 import { TemplateDrivFormComponent } from './forms/template-driv-form/template-driv-form.component';
 import { FormsComponent } from './forms/forms.component';
 import { PipesComponent } from './pipes/pipes.component';
+import { HomeComponent } from './home/home.component';
 
 
 const routes: Routes = [
+    {
+        path: 'home',
+        component: HomeComponent
+    },
     {
         path: 'data-binding',
         component: DataBindingComponent
@@ -27,8 +32,8 @@ const routes: Routes = [
     },
     {
         path: '',
-        component: DataBindingComponent
-    }
+        redirectTo: '/home', pathMatch: 'full'
+    },
 ];
 
 @NgModule({
@@ -37,6 +42,7 @@ const routes: Routes = [
 })
 export class AppRoutingModule {}
 export const routingComponents = [
+    HomeComponent,
     DataBindingComponent,
     DirectivesComponent,
     RectiveDrivFormComponent,
