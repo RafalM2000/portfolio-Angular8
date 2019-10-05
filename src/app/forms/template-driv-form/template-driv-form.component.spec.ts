@@ -1,4 +1,9 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+import { MatCardModule } from '@angular/material/card';
+import { FormsModule } from '@angular/forms';
+import { MatInputModule } from '@angular/material/input';
 
 import { TemplateDrivFormComponent } from './template-driv-form.component';
 
@@ -8,7 +13,13 @@ describe('TemplateDrivFormComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ TemplateDrivFormComponent ]
+      declarations: [ 
+        TemplateDrivFormComponent ],
+      imports: [
+        BrowserAnimationsModule,
+        FormsModule,
+        MatCardModule,
+        MatInputModule]
     })
     .compileComponents();
   }));

@@ -1,7 +1,6 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { MatCardModule } from '@angular/material/card';
-import { NgModule } from '@angular/core';
 
 import { DataBindingComponent } from './data-binding.component';
 
