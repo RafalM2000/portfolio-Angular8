@@ -5,3 +5,7 @@
 html {
     font-family: 'Catamaran', sans-serif;
 }
+
+body {
+    min-width: 800px;
+}

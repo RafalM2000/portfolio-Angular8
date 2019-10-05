@@ -5,7 +5,9 @@
 .item1 { 
     grid-area: menu;
 }
-.item2 { grid-area: main; }
+.item2 { 
+    grid-area: main; 
+}
 .item3 {
     grid-area: footer;
     text-align: center;
