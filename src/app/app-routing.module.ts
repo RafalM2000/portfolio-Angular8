@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { DataBindingComponent } from './data-binding/data-binding.component';
 import { DirectivesComponent } from './directives/directives.component';
-import { RectiveDrivFormComponent } from './forms/rective-driv-form/rective-driv-form.component';
+import { ReactiveDrivFormComponent } from './forms/reactive-driv-form/reactive-driv-form.component';
 import { TemplateDrivFormComponent } from './forms/template-driv-form/template-driv-form.component';
 import { FormsComponent } from './forms/forms.component';
 import { PipesComponent } from './pipes/pipes.component';
@@ -45,7 +45,7 @@ export const routingComponents = [
     HomeComponent,
     DataBindingComponent,
     DirectivesComponent,
-    RectiveDrivFormComponent,
+    ReactiveDrivFormComponent,
     TemplateDrivFormComponent,
     FormsComponent,
     PipesComponent ];

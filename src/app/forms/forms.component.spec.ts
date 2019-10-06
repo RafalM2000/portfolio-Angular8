@@ -1,10 +1,10 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatCardModule } from '@angular/material/card';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatInputModule } from '@angular/material/input';
 
-import { RectiveDrivFormComponent } from './rective-driv-form/rective-driv-form.component';
+import { ReactiveDrivFormComponent } from './reactive-driv-form/reactive-driv-form.component';
 import { TemplateDrivFormComponent } from './template-driv-form/template-driv-form.component';
 
 import { FormsComponent } from './forms.component';
@@ -17,12 +17,13 @@ describe('FormsComponent', () => {
     TestBed.configureTestingModule({
       declarations: [
         FormsComponent,
-        RectiveDrivFormComponent,
+        ReactiveDrivFormComponent,
         TemplateDrivFormComponent ],
       imports: [
       BrowserAnimationsModule,
       MatCardModule,
       FormsModule,
+      ReactiveFormsModule,
       MatInputModule]
     })
     .compileComponents();

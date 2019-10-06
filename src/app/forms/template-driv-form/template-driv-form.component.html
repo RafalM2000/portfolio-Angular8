@@ -35,20 +35,17 @@
              
 
         <div *ngIf="firstName.touched && !firstName.valid" class = 'warning-alert'>
-                <p>First name is invalid</p>
-            </div>
-            <div *ngIf="secondName.touched && !secondName.valid" class = 'warning-alert'>
-                <p>Second name is invalid</p>
-            </div> 
+            <p>First name is invalid</p>
+        </div>
+        <div *ngIf="secondName.touched && !secondName.valid" class = 'warning-alert'>
+            <p>Second name is invalid</p>
+        </div> 
                     
         <button type="submit"
         [disabled]= "form.invalid"
         class ='buttonStyle' 
         mat-raised-button color="accent" 
        >Send</button>
-        </form>
-
-
-    
+        </form>    
     </mat-card-content>   
 </mat-card>  

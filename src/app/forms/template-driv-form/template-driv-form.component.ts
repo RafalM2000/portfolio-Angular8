@@ -11,7 +11,7 @@ export class TemplateDrivFormComponent implements OnInit {
 
   ngOnInit() {
   }
-onSubmit(value) {
+onSubmit(value): void {
     alert(JSON.stringify(value));
   }
 
