@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormGroup, FormControl } from '@angular/forms';
+import { FormGroup, FormControl, Validators } from '@angular/forms';
 
 
 
@@ -16,8 +16,8 @@ guest: FormGroup;
 
   ngOnInit() {
     this.guest = new FormGroup({
-      firstName: new FormControl(),
-      city: new FormControl()
+      firstName: new FormControl('', [Validators.required]),
+      city: new FormControl('Madrid - initial value', [Validators.required])
     });
   }
 

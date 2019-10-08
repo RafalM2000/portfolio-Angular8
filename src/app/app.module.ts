@@ -16,6 +16,7 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { WarningAlertDirective } from './directives/worningAlert/warning-alert.directive';
 import { QuotationPipe } from './quotation.pipe';
+import { ReactiveDrivFormTwoComponent } from './forms/reactive-driv-form-two/reactive-driv-form-two.component';
 
 
 
@@ -29,6 +30,7 @@ import { QuotationPipe } from './quotation.pipe';
     WarningAlertDirective,
     routingComponents,
     QuotationPipe,
+    ReactiveDrivFormTwoComponent,
   ],
   imports: [
     BrowserModule,

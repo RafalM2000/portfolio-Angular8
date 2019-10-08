@@ -5,6 +5,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatInputModule } from '@angular/material/input';
 
 import { ReactiveDrivFormComponent } from './reactive-driv-form/reactive-driv-form.component';
+import { ReactiveDrivFormTwoComponent } from './reactive-driv-form-two/reactive-driv-form-two.component';
 import { TemplateDrivFormComponent } from './template-driv-form/template-driv-form.component';
 
 import { FormsComponent } from './forms.component';
@@ -18,6 +19,7 @@ describe('FormsComponent', () => {
       declarations: [
         FormsComponent,
         ReactiveDrivFormComponent,
+        ReactiveDrivFormTwoComponent,
         TemplateDrivFormComponent ],
       imports: [
       BrowserAnimationsModule,

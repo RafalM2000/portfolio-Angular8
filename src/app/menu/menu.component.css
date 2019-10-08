@@ -8,7 +8,8 @@ a:link {
 
 .active {
     color: rgb(250, 248, 252);
-    background-color: rgb(136, 94, 175);
+    background-color: rgba(133, 42, 224, 0.3);
+    opacity: 3;
     border-radius: 8px;
     padding-left: 15px;
     width: 100px;

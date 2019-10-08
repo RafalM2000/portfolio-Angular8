@@ -1,6 +1,6 @@
 <mat-card>
         <mat-card-header>
-            <mat-card-title>Ex. 1 - reactive driven forms - version I</mat-card-title>
+            <mat-card-title>Ex. 1a - reactive driven forms - version II with FormBuilder</mat-card-title>
         </mat-card-header>   
         <mat-card-content>
             <form [formGroup]="guest" (ngSubmit)="onSubmit()">
@@ -17,9 +17,9 @@
                     <mat-form-field class="example-full-width"> 
                         <input 
                         matInput 
-                        formControlName="city"
-                        placeholder = "enter the city name where you live"
-                        type="text">
+                        formControlName="email"
+                        placeholder = "enter your email"
+                        type="email">
                     </mat-form-field>  
                 </div>
                  
