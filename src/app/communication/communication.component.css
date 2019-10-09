@@ -1,0 +1,14 @@
+.container > mat-card {
+    width: 45%;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 25px; 
+}
+
+.parent {
+    background-color: aquamarine
+}
+
+.child {
+    background-color: rgb(197, 147, 147)
+}
