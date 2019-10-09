@@ -7,6 +7,7 @@ import { TemplateDrivFormComponent } from './forms/template-driv-form/template-d
 import { FormsComponent } from './forms/forms.component';
 import { PipesComponent } from './pipes/pipes.component';
 import { HomeComponent } from './home/home.component';
+import { CommunicationComponent } from './communication/communication.component';
 
 
 const routes: Routes = [
@@ -31,6 +32,10 @@ const routes: Routes = [
         component: FormsComponent
     },
     {
+        path: 'communiation',
+        component: CommunicationComponent
+    },
+    {
         path: '',
         redirectTo: '/home', pathMatch: 'full'
     },
@@ -48,4 +53,6 @@ export const routingComponents = [
     ReactiveDrivFormComponent,
     TemplateDrivFormComponent,
     FormsComponent,
-    PipesComponent ];
+    PipesComponent,
+    CommunicationComponent
+ ];
