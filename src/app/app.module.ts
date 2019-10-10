@@ -17,6 +17,8 @@ import { FooterComponent } from './footer/footer.component';
 import { WarningAlertDirective } from './directives/worningAlert/warning-alert.directive';
 import { QuotationPipe } from './quotation.pipe';
 import { ReactiveDrivFormTwoComponent } from './forms/reactive-driv-form-two/reactive-driv-form-two.component';
+import { ParentComponent } from './communication/parent/parent.component';
+import { ChildComponent } from './communication/child/child.component';
 
 
 
@@ -32,6 +34,8 @@ import { ReactiveDrivFormTwoComponent } from './forms/reactive-driv-form-two/rea
     routingComponents,
     QuotationPipe,
     ReactiveDrivFormTwoComponent,
+    ParentComponent,
+    ChildComponent,
   ],
   imports: [
     BrowserModule,
