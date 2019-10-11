@@ -1,8 +1,8 @@
 <div class="container">
 
     <h3> Interaction between components</h3>
-    <mat-card class="parent">
-        <mat-card-header > 
+    <mat-card class = 'parent'>
+        <mat-card-header> 
             <mat-card-title>
                 Interaction from the parent to the child
             </mat-card-title>
@@ -11,4 +11,15 @@
             <app-parent></app-parent>
         </mat-card-content>
     </mat-card>  
+
+    <mat-card class = 'parent'>
+        <mat-card-header> 
+            <mat-card-title>
+                Interaction from the child to the parent
+            </mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+            <app-parent2></app-parent2>
+        </mat-card-content>
+    </mat-card> 
 

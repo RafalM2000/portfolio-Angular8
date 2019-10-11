@@ -19,6 +19,8 @@ import { QuotationPipe } from './quotation.pipe';
 import { ReactiveDrivFormTwoComponent } from './forms/reactive-driv-form-two/reactive-driv-form-two.component';
 import { ParentComponent } from './communication/parent/parent.component';
 import { ChildComponent } from './communication/child/child.component';
+import { Child2Component } from './communication/child2/child2.component';
+import { Parent2Component } from './communication/parent2/parent2.component';
 
 
 
@@ -36,6 +38,8 @@ import { ChildComponent } from './communication/child/child.component';
     ReactiveDrivFormTwoComponent,
     ParentComponent,
     ChildComponent,
+    Child2Component,
+    Parent2Component,
   ],
   imports: [
     BrowserModule,
