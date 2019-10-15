@@ -1,0 +1,9 @@
+<p>Interaction from component A to component B via service</p>
+
+<p *ngIf='this.messageFromTheService != ""'>
+    {{messageFromTheService}}
+</p>
+
+<p>
+    <button class ='buttonStyle' mat-raised-button color="accent" (click)='fetch()'>Fetch from the service</button>
+</p>

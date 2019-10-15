@@ -1,0 +1,24 @@
+<form #form="ngForm" (ngSubmit)="onSubmit(form.value)">
+    <p>Interaction from component A to component B via service</p>
+    <mat-form-field class="example-full-width">
+        <input 
+        ngModel
+        matInput 
+        placeholder="enter City name" 
+        #cityName="ngModel"
+        name="cityName" 
+        type="text"
+        required/>
+    </mat-form-field>  
+    <p>
+        <button type="submit"
+        [disabled]= "form.invalid"
+        class ='buttonStyle' 
+        mat-raised-button color="accent" 
+        >Send to the service</button>
+    </p>
+
+</form>    
+
+
+

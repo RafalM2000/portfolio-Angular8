@@ -8,7 +8,7 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 export class Child2Component implements OnInit {
 
   @Output() childMessage = new EventEmitter();
-  messageFromChild = 'Message from a child component';
+  messageFromChild = 'I love NY City';
   constructor() { }
 
   ngOnInit() {
