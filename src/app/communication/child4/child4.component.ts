@@ -10,14 +10,12 @@ export class Child4Component implements OnInit {
 
   constructor(private myService: InteractionService) { }
 
-  messageFromTheService = '';
+  messageFromTheService: any = '';
 
   ngOnInit() {
+    this.myService.activatedEmitter.subscribe(data => {
+      this.messageFromTheService = '';
+      this.messageFromTheService = data;
+    });
   }
-
-  fetch() {
-    this.messageFromTheService = this.myService.dataConversion;
-    console.log(this.messageFromTheService);
-  }
-
 }
