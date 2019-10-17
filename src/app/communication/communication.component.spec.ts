@@ -5,9 +5,13 @@ import { ParentComponent } from './parent/parent.component';
 import { Parent2Component } from './parent2/parent2.component';
 import { ChildComponent } from './child/child.component';
 import { Child2Component } from './child2/child2.component';
+import { Child3Component } from './child3/child3.component';
+import { Child4Component } from './child4/child4.component';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FormsModule } from '@angular/forms';
 import { MatCardModule } from '@angular/material/card';
+import { MatInputModule } from '@angular/material/input';
 
 describe('CommunicationComponent', () => {
   let component: CommunicationComponent;
@@ -20,11 +24,15 @@ describe('CommunicationComponent', () => {
         ParentComponent,
         ChildComponent,
         Parent2Component,
-        Child2Component
+        Child2Component,
+        Child3Component,
+        Child4Component
          ],
         imports: [
           BrowserAnimationsModule,
-          MatCardModule
+          MatCardModule,
+          FormsModule,
+          MatInputModule
         ]
     })
     .compileComponents();
