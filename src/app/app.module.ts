@@ -25,6 +25,9 @@ import { Child3Component } from './communication/child3/child3.component';
 import { Child4Component } from './communication/child4/child4.component';
 
 import { InteractionService } from './interaction.service';
+import { Interaction2Service } from './interaction2.service';
+import { Child5Component } from './communication/child5/child5.component';
+import { Child6Component } from './communication/child6/child6.component';
 
 
 @NgModule({
@@ -44,6 +47,8 @@ import { InteractionService } from './interaction.service';
     Parent2Component,
     Child3Component,
     Child4Component,
+    Child5Component,
+    Child6Component,
   ],
   imports: [
     BrowserModule,
@@ -57,7 +62,7 @@ import { InteractionService } from './interaction.service';
     MatButtonModule,
     AppRoutingModule
   ],
-  providers: [ InteractionService ],
+  providers: [ InteractionService, Interaction2Service ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

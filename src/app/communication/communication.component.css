@@ -12,3 +12,7 @@
 .child {
     background-color: rgb(197, 147, 147)
 }
+
+.break {
+    clear: both;
+}
