@@ -8,6 +8,7 @@ import { FormsComponent } from './forms/forms.component';
 import { PipesComponent } from './pipes/pipes.component';
 import { HomeComponent } from './home/home.component';
 import { CommunicationComponent } from './communication/communication.component';
+import { TableComponent } from './http/table/table.component';
 
 
 const routes: Routes = [
@@ -34,6 +35,10 @@ const routes: Routes = [
     {
         path: 'communiation',
         component: CommunicationComponent
+    },
+    {
+        path: 'http',
+        component: TableComponent
     },
     {
         path: '',

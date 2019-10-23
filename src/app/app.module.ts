@@ -8,6 +8,7 @@ import { MatCardModule } from '@angular/material/card';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { AppRoutingModule, routingComponents } from './app-routing.module';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { MenuComponent } from './menu/menu.component';
@@ -28,6 +29,7 @@ import { InteractionService } from './interaction.service';
 import { Interaction2Service } from './interaction2.service';
 import { Child5Component } from './communication/child5/child5.component';
 import { Child6Component } from './communication/child6/child6.component';
+import { TableComponent } from './http/table/table.component';
 
 
 @NgModule({
@@ -49,6 +51,7 @@ import { Child6Component } from './communication/child6/child6.component';
     Child4Component,
     Child5Component,
     Child6Component,
+    TableComponent,
   ],
   imports: [
     BrowserModule,
@@ -60,7 +63,8 @@ import { Child6Component } from './communication/child6/child6.component';
     MatCardModule,
     MatIconModule,
     MatButtonModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
   ],
   providers: [ InteractionService, Interaction2Service ],
   bootstrap: [AppComponent]

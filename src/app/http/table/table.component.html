@@ -1,0 +1,18 @@
+
+<h3> Http request - from json file </h3>
+
+<table>
+    <tr class = 'tabHeader'>
+        <th class = 'tabHeaderRow'>Animal</th>
+        <th class = 'tabHeaderRow'>Body mass</th>
+        <th class = 'tabHeaderRow'>Max speed</th>
+        <th class = 'tabHeaderRow'>Life span</th>
+    </tr>
+    <tr *ngFor = "let element of data">
+        <td>{{element.animal}}</td>
+        <td>{{element.bodymass}}</td>
+        <td>{{element.speed}}</td>
+        <td>{{element.lifespan}}</td>
+    </tr>
+</table>
+
