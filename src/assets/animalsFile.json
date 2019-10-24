@@ -1,0 +1,40 @@
+{
+   "obj": [
+    {
+        "animal": "elephant",
+        "bodymass": "5.700 - 7.600 kg",
+        "speed": "25 km/h",
+        "lifespan": "60-70 years"
+    },
+    {
+        "animal": "leatherback turtle",
+        "bodymass": " 390- 590 kg",
+        "speed": "10 km/h",
+        "lifespan": "over 152 years"
+    },
+    {
+        "animal": "lion",
+        "bodymass": "360 kg",
+        "speed": "85 km/h",
+        "lifespan": "over 30 years"
+    },
+    {
+        "animal": "giraffe",
+        "bodymass": "1.930 kg",
+        "speed": "50 km/h",
+        "lifespan": "over 26 years"
+    },
+    {
+        "animal": "ostrich",
+        "bodymass": "145 kg",
+        "speed": "70 km/h",
+        "lifespan": "over 70 years"
+    },
+    {
+        "animal": "human",
+        "bodymass": "60-150 kg",
+        "speed": "45 km/h",
+        "lifespan": "110 years"
+    }
+]
+}

@@ -1,0 +1,10 @@
+.tabHeader{
+    background-color: rgb(140, 140, 202);
+    text-align: left
+}
+
+.tabHeaderRow {
+    color: white;
+    width: 15%    
+}
+
