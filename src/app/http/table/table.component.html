@@ -7,12 +7,17 @@
         <th class = 'tabHeaderRow'>Body mass</th>
         <th class = 'tabHeaderRow'>Max speed</th>
         <th class = 'tabHeaderRow'>Life span</th>
+        <th class = 'tabHeaderRow'>Action</th>
     </tr>
     <tr *ngFor = "let element of data">
         <td>{{element.animal}}</td>
         <td>{{element.bodymass}}</td>
         <td>{{element.speed}}</td>
         <td>{{element.lifespan}}</td>
+        <td><i class="material-icons">
+                assignment_returned
+                </i>
+        </td>
     </tr>
 </table>
 

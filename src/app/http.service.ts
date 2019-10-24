@@ -11,7 +11,11 @@ export class HttpService {
 
   constructor(private http: HttpClient) { }
 
-  getPictures() {
-    return this.http.get<ObjData>('./assets/file.json');
+  getAnimals() {
+    return this.http.get<ObjData>('./assets/animalsFile.json');
+  }
+
+  getAnimalDetails() {
+    return this.http.get<ObjData>('./assets/animalsDetailFile.json');
   }
 }

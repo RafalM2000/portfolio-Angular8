@@ -13,10 +13,16 @@ export class TableComponent implements OnInit {
   constructor(private fetchService: HttpService) { }
 
   ngOnInit() {
-    this.fetchService.getPictures()
+    this.fetchService.getAnimals()
+    .subscribe(data => {
+      this.data = data.obj;
+    });
+  }
+
+  getDetails() {
+    this.fetchService.getAnimalDetails()
     .subscribe(data => {
       console.log('My data', this.data = data.obj);
     });
   }
-
 }
