@@ -15,7 +15,7 @@ export class HttpService {
     return this.http.get<ObjData>('./assets/animalsFile.json');
   }
 
-  getAnimalDetails() {
-    return this.http.get<ObjData>('./assets/animalsDetailFile.json');
+  getAnimalDetails(param) {
+    return this.http.get<ObjData>('./assets/animalsDetailFile.json/' + '/?animal=' + param);
   }
 }

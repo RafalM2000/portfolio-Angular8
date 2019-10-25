@@ -19,8 +19,8 @@ export class TableComponent implements OnInit {
     });
   }
 
-  getDetails() {
-    this.fetchService.getAnimalDetails()
+  getDetails(animal) {
+    this.fetchService.getAnimalDetails(animal)
     .subscribe(data => {
       console.log('My data', this.data = data.obj);
     });
