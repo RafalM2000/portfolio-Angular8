@@ -20,5 +20,9 @@
                 </i>
         </td>
     </tr>
+    <tr *ngIf= "selectedAnimal">
+        <td colspan = "5" class = 'dataDetails'>
+            <p>About {{selectedAnimal}}</p>
+            {{dataDetails}}</td>
+    </tr>
 </table>
-

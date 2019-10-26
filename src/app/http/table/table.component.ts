@@ -9,7 +9,8 @@ import { HttpService } from '../../http.service';
 export class TableComponent implements OnInit {
 
   data = [];
-  dataDetails = [];
+  dataDetails: string;
+  selectedAnimal: string;
 
   constructor(private fetchService: HttpService) { }
 
@@ -21,9 +22,10 @@ export class TableComponent implements OnInit {
   }
 
   getDetails(animal) {
+    this.selectedAnimal = animal;
     this.fetchService.getAnimalDetails(animal)
     .subscribe(data => {
-      console.log('My data', this.dataDetails = data.obj);
+      this.dataDetails = data;
     });
   }
 }
