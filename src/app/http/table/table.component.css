@@ -1,3 +1,6 @@
+table {
+    width: 100%
+}
 .tabHeader{
     background-color: rgb(140, 140, 202);
     text-align: left
