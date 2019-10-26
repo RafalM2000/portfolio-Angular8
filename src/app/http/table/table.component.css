@@ -1,6 +1,12 @@
 table {
     width: 100%
 }
+
+td, th {
+    border: 1px solid whitesmoke;
+    padding-left: 15px;
+}
+
 .tabHeader{
     background-color: rgb(140, 140, 202);
     text-align: left
