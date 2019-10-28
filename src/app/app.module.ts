@@ -30,6 +30,8 @@ import { Interaction2Service } from './interaction2.service';
 import { Child5Component } from './communication/child5/child5.component';
 import { Child6Component } from './communication/child6/child6.component';
 import { TableComponent } from './http/table/table.component';
+import { Child7Component } from './communication/child7/child7.component';
+import { Parent3Component } from './communication/parent3/parent3.component';
 
 
 @NgModule({
@@ -52,6 +54,8 @@ import { TableComponent } from './http/table/table.component';
     Child5Component,
     Child6Component,
     TableComponent,
+    Child7Component,
+    Parent3Component,
   ],
   imports: [
     BrowserModule,
