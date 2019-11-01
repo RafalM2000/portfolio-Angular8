@@ -1,0 +1,22 @@
+<form #form="ngForm" (ngSubmit)="onSubmit(form.value)">
+        <p>Implementation of ngOnChanges</p>
+        <mat-form-field class="example-full-width">
+            <input 
+            ngModel
+            matInput 
+            placeholder="enter City name" 
+            #cityName="ngModel"
+            name="city" 
+            type="text"
+            required/>
+        </mat-form-field>  
+        <p>
+            <button type="submit"
+            [disabled]= "form.invalid"
+            class ='buttonStyle' 
+            mat-raised-button color="accent" 
+            >Send to the child component</button>
+        </p>    
+    </form>    
+
+    <app-child8  [messageFromTheParent] = "message"></app-child8>

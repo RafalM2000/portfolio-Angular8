@@ -32,6 +32,9 @@ import { Child6Component } from './communication/child6/child6.component';
 import { TableComponent } from './http/table/table.component';
 import { Child7Component } from './communication/child7/child7.component';
 import { Parent3Component } from './communication/parent3/parent3.component';
+import { Child8Component } from './lifecyclehooks/child/child8.component';
+import { ParenthooksComponent } from './lifecyclehooks/parent/parent4.component';
+
 
 
 @NgModule({
@@ -56,6 +59,8 @@ import { Parent3Component } from './communication/parent3/parent3.component';
     TableComponent,
     Child7Component,
     Parent3Component,
+    Child8Component,
+    ParenthooksComponent
   ],
   imports: [
     BrowserModule,

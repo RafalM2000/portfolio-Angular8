@@ -9,6 +9,7 @@ import { PipesComponent } from './pipes/pipes.component';
 import { HomeComponent } from './home/home.component';
 import { CommunicationComponent } from './communication/communication.component';
 import { TableComponent } from './http/table/table.component';
+import { HooksComponent } from './lifecyclehooks/hooks/hooks.component';
 
 
 const routes: Routes = [
@@ -41,6 +42,10 @@ const routes: Routes = [
         component: TableComponent
     },
     {
+        path: 'hooks',
+        component: HooksComponent
+    },
+    {
         path: '',
         redirectTo: '/home', pathMatch: 'full'
     },
@@ -59,5 +64,6 @@ export const routingComponents = [
     TemplateDrivFormComponent,
     FormsComponent,
     PipesComponent,
-    CommunicationComponent
+    CommunicationComponent,
+    HooksComponent
  ];
