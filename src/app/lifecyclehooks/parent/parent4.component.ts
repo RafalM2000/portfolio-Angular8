@@ -16,7 +16,5 @@ export class ParenthooksComponent implements OnInit {
 
   onSubmit(form) {
     this.message = form.city;
-
   }
-
 }
