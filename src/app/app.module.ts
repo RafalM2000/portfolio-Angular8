@@ -36,7 +36,6 @@ import { Child8Component } from './lifecyclehooks/child/child8.component';
 import { ParenthooksComponent } from './lifecyclehooks/parent/parent4.component';
 
 
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -60,7 +59,7 @@ import { ParenthooksComponent } from './lifecyclehooks/parent/parent4.component'
     Child7Component,
     Parent3Component,
     Child8Component,
-    ParenthooksComponent
+    ParenthooksComponent,
   ],
   imports: [
     BrowserModule,

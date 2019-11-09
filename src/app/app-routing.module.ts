@@ -46,6 +46,10 @@ const routes: Routes = [
         component: HooksComponent
     },
     {
+        path: 'lazy',
+        loadChildren: './lazy/lazy.module'
+    },
+    {
         path: '',
         redirectTo: '/home', pathMatch: 'full'
     },
