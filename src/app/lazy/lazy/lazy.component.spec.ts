@@ -1,4 +1,5 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { MatCardModule } from '@angular/material/card';
 
 import { LazyComponent } from './lazy.component';
 
@@ -8,7 +9,8 @@ describe('LazyComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ LazyComponent ]
+      declarations: [ LazyComponent ],
+      imports: [MatCardModule]
     })
     .compileComponents();
   }));
