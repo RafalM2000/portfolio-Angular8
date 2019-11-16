@@ -10,6 +10,8 @@ import { HomeComponent } from './home/home.component';
 import { CommunicationComponent } from './communication/communication.component';
 import { TableComponent } from './http/table/table.component';
 import { HooksComponent } from './lifecyclehooks/hooks/hooks.component';
+import { InterceptorComponent } from './interceptor/interceptor.component';
+
 
 
 const routes: Routes = [
@@ -50,6 +52,10 @@ const routes: Routes = [
         loadChildren: './lazy/lazy.module'
     },
     {
+        path: 'interceptor',
+        component: InterceptorComponent
+    },
+    {
         path: '',
         redirectTo: '/home', pathMatch: 'full'
     },
@@ -69,5 +75,6 @@ export const routingComponents = [
     FormsComponent,
     PipesComponent,
     CommunicationComponent,
-    HooksComponent
+    HooksComponent,
+    InterceptorComponent
  ];
