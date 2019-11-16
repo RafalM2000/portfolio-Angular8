@@ -6,7 +6,10 @@ import { InterceptorsHttpService } from '../interceptor.service';
   templateUrl: './interceptor.component.html',
   styleUrls: ['./interceptor.component.css']
 })
+
 export class InterceptorComponent implements OnInit {
+
+  textVisibility = false;
 
   constructor(private myService: InterceptorsHttpService) { }
 
@@ -17,6 +20,9 @@ export class InterceptorComponent implements OnInit {
       .subscribe(data => {
         console.log(data);
       });
+
+      this.textVisibility = true;
+
     }
 }
 
