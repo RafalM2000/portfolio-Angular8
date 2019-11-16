@@ -34,6 +34,11 @@ import { Child7Component } from './communication/child7/child7.component';
 import { Parent3Component } from './communication/parent3/parent3.component';
 import { Child8Component } from './lifecyclehooks/child/child8.component';
 import { ParenthooksComponent } from './lifecyclehooks/parent/parent4.component';
+import { InterceptorComponent } from './interceptor/interceptor.component';
+
+import { HTTP_INTERCEPTORS } from '@angular/common/http';
+import { TokenInterceptor } from './token.interceptor';
+import { InterceptorsHttpService } from './interceptor.service';
 
 
 @NgModule({
@@ -58,8 +63,9 @@ import { ParenthooksComponent } from './lifecyclehooks/parent/parent4.component'
     TableComponent,
     Child7Component,
     Parent3Component,
-    Child8Component,
+     Child8Component,
     ParenthooksComponent,
+    InterceptorComponent
   ],
   imports: [
     BrowserModule,
@@ -74,7 +80,8 @@ import { ParenthooksComponent } from './lifecyclehooks/parent/parent4.component'
     AppRoutingModule,
     HttpClientModule,
   ],
-  providers: [ InteractionService, Interaction2Service ],
+  providers: [ InteractionService, Interaction2Service, InterceptorsHttpService,
+    {provide: HTTP_INTERCEPTORS, useClass: TokenInterceptor, multi: true } ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

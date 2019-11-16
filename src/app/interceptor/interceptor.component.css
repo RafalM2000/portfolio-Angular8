@@ -1,0 +1,10 @@
+mat-card {
+    margin: 30px;
+    text-align: center;
+    background-color: aquamarine;
+}
+
+mat-card-content {
+    background-color: whitesmoke; 
+    padding: 50px;
+}
