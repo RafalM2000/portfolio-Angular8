@@ -11,7 +11,7 @@ import { CommunicationComponent } from './communication/communication.component'
 import { TableComponent } from './http/table/table.component';
 import { HooksComponent } from './lifecyclehooks/hooks/hooks.component';
 import { InterceptorComponent } from './interceptor/interceptor.component';
-
+import { LazyComponent } from './lazy/lazy/lazy.component';
 
 
 const routes: Routes = [
@@ -48,8 +48,12 @@ const routes: Routes = [
         component: HooksComponent
     },
     {
-        path: 'lazy',
+        path: 'lazymodule',
         loadChildren: './lazy/lazy.module'
+    },
+    {
+        path: 'lazy',
+        component: LazyComponent
     },
     {
         path: 'interceptor',

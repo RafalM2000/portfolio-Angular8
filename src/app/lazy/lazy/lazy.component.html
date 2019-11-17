@@ -4,7 +4,12 @@
         <mat-card-title>Example - lazy module</mat-card-title>
     </mat-card-header>
     <mat-card-content>
-        <p>Lazy module works</p>
-        <p>See at the console-network before and after clicking lazy module in the menu after reloading app</p>
+        <p>Go to the console-network before clicking button - "Lazy module"</p>
+        <p>After clicking the button you shoud see in the console that lazy-module has been loaded</p>
+        <button
+        class ='buttonStyle' 
+        mat-raised-button color="accent">
+       <a routerLink="/lazymodule" routerLinkActive="active">Lazy module</a>
+        </button>            
     </mat-card-content>
 </mat-card>    

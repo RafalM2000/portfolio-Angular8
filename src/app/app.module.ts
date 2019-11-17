@@ -39,6 +39,7 @@ import { InterceptorComponent } from './interceptor/interceptor.component';
 import { HTTP_INTERCEPTORS } from '@angular/common/http';
 import { TokenInterceptor } from './token.interceptor';
 import { InterceptorsHttpService } from './interceptor.service';
+import { LazyComponent } from './lazy/lazy/lazy.component';
 
 
 @NgModule({
@@ -65,7 +66,8 @@ import { InterceptorsHttpService } from './interceptor.service';
     Parent3Component,
      Child8Component,
     ParenthooksComponent,
-    InterceptorComponent
+    InterceptorComponent,
+    LazyComponent
   ],
   imports: [
     BrowserModule,
