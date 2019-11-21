@@ -24,4 +24,9 @@ describe('HomeComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('should render title in a h3 tag', async(() => {
+    const compiled = fixture.debugElement.componentInstance;
+    expect(compiled.title).toEqual('Welcome !!!');
+  }));
 });

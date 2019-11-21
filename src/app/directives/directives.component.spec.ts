@@ -26,4 +26,9 @@ describe('DirectivesComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('should render title in a h3 tag', async(() => {
+    const compiled = fixture.debugElement.nativeElement;
+    expect(compiled.querySelector('h3').textContent).toContain('Examples of data binding in Angular');
+  }));
 });

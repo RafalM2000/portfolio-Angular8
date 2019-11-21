@@ -7,12 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DirectivesComponent implements OnInit {
 
-usersList = ['Mike', 'Jon', 'Sara', 'Eva'];
-isVisible = true;
-switchExpression = 'No2';
-colorConverter = false;
-currencies =  ['PLN', 'GBP', 'EUR', 'USD'];
-currencyItem = 0;
+  title = 'Examples of data binding in Angular';
+
+  usersList = ['Mike', 'Jon', 'Sara', 'Eva'];
+  isVisible = true;
+  switchExpression = 'No2';
+  colorConverter = false;
+  currencies =  ['PLN', 'GBP', 'EUR', 'USD'];
+  currencyItem = 0;
 
   constructor() { }
 
